@@ -5,5 +5,5 @@
 TEST(BinarySearchTest, EmptyVectorSearchReturnsEnd)
 {
     std::vector<int> v;
-    ASSERT_EQ( binary_search(v, 1), v.end() );
+    ASSERT_EQ( binary_search(v, 1), 0);
 }

@@ -1,7 +1,12 @@
 #include "binary_search.hpp"
 
-std::vector<int>::const_iterator binary_search(const std::vector<int>& v, int val)
+int binary_search(const std::vector<int>& v, int val)
 {
-    return v.end();
+	for(int i = 0; i < v.size(); i++)
+	{
+		cout<<v[i]
+			<<' ';
+	}
+    return 0;
 }
 
