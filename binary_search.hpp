@@ -1,5 +1,7 @@
 #pragma once
-
+#include <iostream>
 #include <vector>
+using namespace std;
 
-std::vector<int>::const_iterator binary_search(const std::vector<int>& v, int val);
+
+int binary_search(const std::vector<int>& v, int val);
