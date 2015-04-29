@@ -1,10 +1,10 @@
 #include "binary_search.hpp"
-#include <math.h>
+using namespace std;
 
 int binary_search(const std::vector<int>& v, int val)
 {
 	int search_done = 0; //element exist or not in array
-	int val_position = -1; // value position (чем-то определить надо все равно но чем...??)
+	int val_position = -1; // value position 
 	double middle_position;
 	int vector_size = v.size();
 	if (vector_size == 0)
@@ -35,8 +35,8 @@ int binary_search(const std::vector<int>& v, int val)
 	{
 	do
 	{
-	middle_position = (array_el_max + array_el_min)/2; //??
-	//middle_position = ceil(middle_position); //??
+	middle_position = (array_el_max + array_el_min)/2; 
+	
 																cout<<"\nmiddle_position: ";
 																cout<<middle_position
 																	<<"\nelenent in middle position: "
