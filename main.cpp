@@ -13,8 +13,9 @@ int main()
 	{
 		v.push_back(i+1);
 	}
-
-	assert(binary_search(v, 1) == 0);
-	assert(binary_search(v, 7) == -1);
+	vector<int> v0;
+	/*assert(binary_search(v, 1) == 0);
+	assert(binary_search(v, 7) == -1);*/
+	assert(binary_search(v0, 7) == -1);
     return 0;
 }

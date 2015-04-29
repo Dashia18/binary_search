@@ -7,7 +7,10 @@ int binary_search(const std::vector<int>& v, int val)
 	int val_position = -1; // value position (чем-то определить надо все равно но чем...??)
 	double middle_position;
 	int vector_size = v.size();
-	
+	if (vector_size == 0)
+	{
+		return val_position;
+	}
 																cout<<"Array:\n";
 																for(int i = 0; i < v.size(); i++)
 																{
