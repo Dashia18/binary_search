@@ -3,7 +3,7 @@
 
 int binary_search(const std::vector<int>& v, int val)
 {
-	int val_exist = 0; //element exist or not in array
+	int search_done = 0; //element exist or not in array
 	int val_position; // value position (чем-то определить надо все равно но чем...??)
 	double middle_position;
 	int vector_size = v.size();
@@ -19,7 +19,13 @@ int binary_search(const std::vector<int>& v, int val)
 
 	int array_el_min = 0;
 	int array_el_max = vector_size-1;
-	
+	if((v[array_el_min]>val) || (v[array_el_max]<val))
+	{
+		
+		cout<< "\nElement was not find!\n";
+	}
+	else
+	{
 	do
 	{
 	middle_position = (array_el_max + array_el_min)/2; //??
@@ -28,6 +34,7 @@ int binary_search(const std::vector<int>& v, int val)
 																cout<<middle_position
 																	<<"\nelenent in middle position: "
 																	<<v[middle_position];
+    
 	if (v[middle_position] > val)
 	{
 		//v[0 .. middle_position]
@@ -40,15 +47,16 @@ int binary_search(const std::vector<int>& v, int val)
 		array_el_min = middle_position;
 		array_el_max = array_el_max;
 	} 
-	else
+	else if (v[middle_position] == val)
 	{
 		val_position = middle_position;
-		val_exist=1;
+		search_done=1;
 		cout<< "\nElement was find! It position is:\n"
 	    <<val_position;
 	}
-	}while(val_exist!=1);
-
+	
+	}while(search_done!=1);
+	}
     return 0;
 }
 

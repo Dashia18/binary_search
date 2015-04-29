@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-	const int N = 6, val = 4;	
+	const int N = 6, val = 7;	
 	vector<int> v;
 	for (int i = 0; i < N; i++)
 	{
