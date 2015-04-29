@@ -9,7 +9,9 @@ int binary_search(const std::vector<int>& v, int val)
 	int vector_size = v.size();
 	if (vector_size == 0)
 	{
+		cout<< "\nArray is empty!\n";
 		return val_position;
+
 	}
 																cout<<"Array:\n";
 																for(int i = 0; i < v.size(); i++)
@@ -17,6 +19,8 @@ int binary_search(const std::vector<int>& v, int val)
 																	cout<<v[i]
 																		<<' ';
 																}
+																cout<<"\nvalue for search: ";
+																cout<<val;
 																cout<<"\nvector_size: ";
 																cout<<vector_size;
 
@@ -55,7 +59,8 @@ int binary_search(const std::vector<int>& v, int val)
 		val_position = middle_position;
 		search_done=1;
 		cout<< "\nElement was find! It position is:\n"
-	    <<val_position;
+	    <<val_position
+		<<"\n";
 	}
 	
 	}while(search_done!=1);
