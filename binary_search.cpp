@@ -4,7 +4,7 @@
 int binary_search(const std::vector<int>& v, int val)
 {
 	int search_done = 0; //element exist or not in array
-	int val_position; // value position (чем-то определить надо все равно но чем...??)
+	int val_position = -1; // value position (чем-то определить надо все равно но чем...??)
 	double middle_position;
 	int vector_size = v.size();
 	
@@ -57,6 +57,6 @@ int binary_search(const std::vector<int>& v, int val)
 	
 	}while(search_done!=1);
 	}
-    return 0;
+    return val_position;
 }
 
